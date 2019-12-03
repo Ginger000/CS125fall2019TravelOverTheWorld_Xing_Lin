@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Spain_1"></activity>
+        <activity android:name=".Us_1"></activity>
+        <activity android:name=".Australia_1"></activity>
+        <activity android:name=".China_1"></activity>
+        <activity android:name=".India_1"></activity>
     </application>
     <uses-sdk android:minSdkVersion="3" />
 

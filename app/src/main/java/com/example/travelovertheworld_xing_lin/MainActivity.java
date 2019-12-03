@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         china_pin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), China_1.class);
-                startActivityForResult(myIntent, 0);
+                Intent myIntent1 = new Intent(v.getContext(), China_1.class);
+                startActivityForResult(myIntent1, 0);
             }
         });
 
@@ -36,21 +36,21 @@ public class MainActivity extends AppCompatActivity {
         australia_pin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), Australia_1.class);
-                startActivityForResult(myIntent, 0);
+                Intent myIntent2 = new Intent(v.getContext(), Australia_1.class);
+                startActivityForResult(myIntent2, 0);
             }
         });
 
-        Button india_pin = (Button) findViewById(R.id.australia_pin);
+        Button india_pin = (Button) findViewById(R.id.indian_pin);
         india_pin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), India_1.class);
-                startActivityForResult(myIntent, 0);
+                Intent myIntent3 = new Intent(v.getContext(), India_1.class);
+                startActivityForResult(myIntent3, 0);
             }
         });
 
-        Button us_pin = (Button) findViewById(R.id.australia_pin);
+        Button us_pin = (Button) findViewById(R.id.us_pin);
         us_pin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

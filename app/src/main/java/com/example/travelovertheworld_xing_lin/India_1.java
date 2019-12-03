@@ -12,7 +12,7 @@ public class India_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.indian);
+        setContentView(R.layout.indian_new);
 
         Button backbutton = (Button) findViewById(R.id.back_button);
         backbutton.setOnClickListener(new View.OnClickListener() {

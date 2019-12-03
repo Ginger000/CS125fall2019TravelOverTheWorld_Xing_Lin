@@ -22,5 +22,41 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(myIntent, 0);
             }
         });
+
+        Button china_pin = (Button) findViewById(R.id.china_pin);
+        china_pin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), China_1.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        Button australia_pin = (Button) findViewById(R.id.australia_pin);
+        australia_pin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), Australia_1.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        Button india_pin = (Button) findViewById(R.id.australia_pin);
+        india_pin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), India_1.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+
+        Button us_pin = (Button) findViewById(R.id.australia_pin);
+        us_pin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), Us_1.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 }

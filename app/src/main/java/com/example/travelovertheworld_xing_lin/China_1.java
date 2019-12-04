@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class China_1 extends AppCompatActivity {
 
@@ -13,6 +14,9 @@ public class China_1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.china);
+
+        ImageView imageViewIcon = (ImageView) findViewById(R.id.textbackdrop);
+        imageViewIcon.setColorFilter(imageViewIcon.getContext().getResources().getColor(R.color.grey));
 
         Button backbutton = (Button) findViewById(R.id.back_button);
         backbutton.setOnClickListener(new View.OnClickListener() {

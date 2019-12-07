@@ -7,16 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.graphics.Color;
+
+import com.like.LikeButton;
+import com.like.OnLikeListener;
 
 public class China_1 extends AppCompatActivity {
-
+    static int Liked;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.china);
 
-        ImageView imageViewIcon = (ImageView) findViewById(R.id.textbackdrop);
-        imageViewIcon.setColorFilter(imageViewIcon.getContext().getResources().getColor(R.color.grey));
+//        ImageView imageViewIcon = (ImageView) findViewById(R.id.textbackdrop);
+//        imageViewIcon.setColorFilter(imageViewIcon.getContext().getResources().getColor(R.color.grey));
 
         Button backbutton = (Button) findViewById(R.id.back_button);
         backbutton.setOnClickListener(new View.OnClickListener() {
@@ -27,5 +31,22 @@ public class China_1 extends AppCompatActivity {
                 finish();
             }
         });
+        final LikeButton likeButton = findViewById(R.id.star_button);
+        likeButton.setOnLikeListener(new OnLikeListener() {
+            @Override
+            public void liked(LikeButton likeButton) {
+                Liked = 1;
+            }
+
+            @Override
+            public void unLiked(LikeButton likeButton) {
+                Liked = 0;
+            }
+        });
+        if (Liked == 1) {
+            likeButton.setLiked(true);
+        } else {
+            likeButton.setLiked(false);
+        }
     }
 }

@@ -16,6 +16,7 @@ public class China_1 extends AppCompatActivity {
         setContentView(R.layout.china);
 
         ImageView imageViewIcon = (ImageView) findViewById(R.id.textbackdrop);
+        imageViewIcon.setColorFilter(imageViewIcon.getContext().getResources().getColor(R.color.grey));
 
         Button backbutton = (Button) findViewById(R.id.back_button);
         backbutton.setOnClickListener(new View.OnClickListener() {

@@ -17,7 +17,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentStart="false">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/view1"
@@ -26,8 +27,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="416dp"
-                android:layout_height="754dp"
+                android:layout_width="442dp"
+                android:layout_height="769dp"
                 android:contentDescription="@string/fuente_de_los_amantes_arq_luis_barragan"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -35,26 +36,31 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.521"
-                app:srcCompat="@drawable/australia_1" />
+                app:srcCompat="@drawable/australia_1_copy" />
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="395dp"
+                android:layout_height="87dp"
+                android:layout_marginBottom="580dp"
                 android:text="@string/the_sydney_opera_house_in_sydney_new_south_wales_australia_is_one_of_the_most_famous_performing_arts_venues_in_the_world_designed_by_pritzker_prize_winning_architect_j_rn_utzon"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="1.0" />
 
             <Button
                 android:id="@+id/back_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="44dp"
+                android:layout_marginRight="44dp"
                 android:text="@string/back"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageView"
@@ -64,9 +70,15 @@
                 android:id="@+id/go"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Go"
-                tools:layout_editor_absoluteX="149dp"
-                tools:layout_editor_absoluteY="698dp" />
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/go"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="1.0" />
 
             <com.like.LikeButton
                 android:id="@+id/star_button"
@@ -101,13 +113,14 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.521"
-                app:srcCompat="@drawable/australia_1" />
+                app:srcCompat="@drawable/australia_2" />
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/the_sydney_opera_house_in_sydney_new_south_wales_australia_is_one_of_the_most_famous_performing_arts_venues_in_the_world_designed_by_pritzker_prize_winning_architect_j_rn_utzon"
+                android:layout_width="395dp"
+                android:layout_height="87dp"
+                android:layout_marginBottom="580dp"
+                android:text="@string/whitehaven_beach_is_a_7_km_stretch_known_for_its_crystal_white_silica_sands_and_turquoise_coloured_waters"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -115,7 +128,22 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/go2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/go"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="1.0" />
 
             <Button
                 android:id="@+id/back_button2"

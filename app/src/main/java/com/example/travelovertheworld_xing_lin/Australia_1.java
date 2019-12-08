@@ -28,6 +28,17 @@ public class Australia_1 extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button backbutton2 = (Button) findViewById(R.id.back_button2);
+        backbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        });
+
         final LikeButton likeButton = findViewById(R.id.star_button);
         likeButton.setOnLikeListener(new OnLikeListener() {
             @Override
@@ -51,6 +62,18 @@ public class Australia_1 extends AppCompatActivity {
         final ConstraintLayout mySecondView = findViewById(R.id.view2);
         Button button1 = (Button) findViewById(R.id.go);
         button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                // TODO Auto-generated method stub
+                if (viewSwitcher.getCurrentView() != myFirstView) {
+                    viewSwitcher.showPrevious();
+                } else if (viewSwitcher.getCurrentView() != mySecondView) {
+                    viewSwitcher.showNext();
+                }
+            }
+        });
+        Button button2 = (Button) findViewById(R.id.go2);
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub

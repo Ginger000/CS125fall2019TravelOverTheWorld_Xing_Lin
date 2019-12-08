@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="435dp"
-        android:layout_height="732dp"
+        android:layout_width="441dp"
+        android:layout_height="734dp"
         android:contentDescription="@string/fuente_de_los_amantes_arq_luis_barragan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

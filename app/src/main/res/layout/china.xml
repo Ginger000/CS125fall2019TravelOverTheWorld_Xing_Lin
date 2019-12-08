@@ -29,19 +29,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/china_1" />
 
-    <ImageView
-        android:id="@+id/textbackdrop"
-        android:layout_width="279dp"
-        android:layout_height="134dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.007"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="?attr/actionModeSplitBackground"
-        android:contentDescription="TODO" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="399dp"
@@ -62,7 +49,7 @@
         app:layout_constraintRight_toRightOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.912" />
 
     <com.like.LikeButton
         android:id="@+id/star_button"

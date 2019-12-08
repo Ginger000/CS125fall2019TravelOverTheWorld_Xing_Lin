@@ -15,8 +15,6 @@ public class China_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.china);
 
-        ImageView imageViewIcon = (ImageView) findViewById(R.id.textbackdrop);
-
         Button backbutton = (Button) findViewById(R.id.back_button);
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override

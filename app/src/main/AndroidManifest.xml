@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DashboardActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,11 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Spain_1"></activity>
-        <activity android:name=".Us_1"></activity>
-        <activity android:name=".Australia_1"></activity>
-        <activity android:name=".China_1"></activity>
-        <activity android:name=".India_1"></activity>
+        <activity android:name=".Spain_1" />
+        <activity android:name=".Us_1" />
+        <activity android:name=".Australia_1" />
+        <activity android:name=".China_1" />
+        <activity android:name=".India_1" />
     </application>
 
 </manifest>

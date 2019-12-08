@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="190dp"
-        android:layout_marginLeft="190dp"
+
         android:layout_marginTop="16dp"
         android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"

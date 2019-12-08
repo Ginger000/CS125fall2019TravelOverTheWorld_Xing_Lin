@@ -9,4 +9,11 @@
     <string name="the_forbidden_city_in_beijing_china_is_the_largest_ancient_palatial_structure_in_the_world_constructed_in_1420_and_proudly_displays_the_essence_and_culmination_of_traditional_chinese_architecture">The Forbidden City in Beijing, China, is the largest ancient palatial structure in the world, constructed in 1420 and proudly displays the essence and culmination of traditional Chinese architecture</string>
     <string name="the_forbidden_city_in_beijing_china_is_the_largest_ancient_palatial_structure_in_the_world_constructed_in_1420_and_displays_the_essence_and_culmination_of_traditional_chinese_architecture">the_forbidden_city_in_beijing_china_is_the_largest_ancient_palatial_structure_in_the_world_constructed_in_1420_and_displays_the_essence_and_culmination_of_traditional_chinese_architecture</string>
     <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register_me">Register Me</string>
+    <string name="open_icon">open_icon</string>
 </resources>

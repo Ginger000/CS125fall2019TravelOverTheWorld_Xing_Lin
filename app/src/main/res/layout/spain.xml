@@ -6,64 +6,173 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/back_button"
+    <ViewSwitcher
+        android:id="@+id/viewswticher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="192dp"
-        android:layout_marginRight="192dp"
-        android:layout_marginBottom="4dp"
-        android:text="@string/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintRight_toRightOf="@+id/imageView" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="655dp"
-        android:layout_height="741dp"
-        android:contentDescription="@string/fuente_de_los_amantes_arq_luis_barragan"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:inAnimation="@android:anim/slide_in_left"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/spain_1" />
+        android:layout_alignParentStart="false">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="384dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="517dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginBottom="1dp"
-        android:text="@string/the_los_clubes_cuadra_san_crist_bal_y_fuente_de_los_amantes_by_architect_luis_barragan_was_built_in_atizap_n_de_zaragoza_mexico_city_in_1964_1969"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.752" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="192dp"
+                android:layout_marginRight="192dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintRight_toRightOf="@+id/imageView" />
 
-    <com.like.LikeButton
-        android:id="@+id/star_button"
-        android:layout_width="45dp"
-        android:layout_height="46dp"
-        app:anim_scale_factor="3"
-        app:icon_size="10dp"
-        app:icon_type="heart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991"
-        app:liked="false" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="655dp"
+                android:layout_height="741dp"
+                android:contentDescription="@string/fuente_de_los_amantes_arq_luis_barragan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.352"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/spain_1" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="384dp"
+                android:layout_height="92dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="517dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="1dp"
+                android:text="@string/the_los_clubes_cuadra_san_crist_bal_y_fuente_de_los_amantes_by_architect_luis_barragan_was_built_in_atizap_n_de_zaragoza_mexico_city_in_1964_1969"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.063"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.752" />
+
+            <com.like.LikeButton
+                android:id="@+id/star_button"
+                android:layout_width="45dp"
+                android:layout_height="46dp"
+                app:anim_scale_factor="3"
+                app:icon_size="10dp"
+                app:icon_type="heart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.631"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.991"
+                app:liked="false" />
+            <Button
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/go"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="416dp"
+                android:layout_height="754dp"
+                android:contentDescription="@string/fuente_de_los_amantes_arq_luis_barragan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.521"
+                app:srcCompat="@drawable/australia_2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="395dp"
+                android:layout_height="87dp"
+                android:layout_marginBottom="580dp"
+                android:text="@string/whitehaven_beach_is_a_7_km_stretch_known_for_its_crystal_white_silica_sands_and_turquoise_coloured_waters"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/go2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/go"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/back_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintRight_toRightOf="@+id/imageView2" />
+
+            <com.like.LikeButton
+                android:id="@+id/star_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:anim_scale_factor="3"
+                app:icon_size="10dp"
+                app:icon_type="heart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.606"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.976"
+                app:liked="false" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ViewSwitcher>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

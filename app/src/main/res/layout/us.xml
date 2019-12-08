@@ -6,62 +6,169 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/back_button"
+    <ViewSwitcher
+        android:id="@+id/viewswticher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="32dp"
-        android:text="@string/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintRight_toRightOf="@+id/imageView" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="414dp"
-        android:layout_height="671dp"
-        android:layout_marginTop="58dp"
-        android:contentDescription="@string/fuente_de_los_amantes_arq_luis_barragan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/america_1" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="399dp"
-        android:layout_height="156dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="525dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginBottom="-7dp"
-        android:text="@string/marina_city_is_a_mixed_use_residential_commercial_building_complex_in_chicago_illinois_united_states_north_america_designed_by_architect_bertrand_goldberg"
-        android:textColor="#312828"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
-
-    <com.like.LikeButton
-        android:id="@+id/star_button"
-        android:layout_width="45dp"
-        android:layout_height="46dp"
-        app:anim_scale_factor="3"
-        app:icon_size="10dp"
-        app:icon_type="heart"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:inAnimation="@android:anim/slide_in_left"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.683"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953"
+        android:layout_alignParentStart="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintRight_toRightOf="@+id/imageView" />
+            <Button
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/go"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="1.0" />
+            <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="414dp"
+            android:layout_height="671dp"
+            android:layout_marginTop="58dp"
+            android:contentDescription="@string/fuente_de_los_amantes_arq_luis_barragan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/america_1" />
+
+            <TextView
+            android:id="@+id/textView"
+            android:layout_width="399dp"
+            android:layout_height="156dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="525dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="-7dp"
+            android:text="@string/marina_city_is_a_mixed_use_residential_commercial_building_complex_in_chicago_illinois_united_states_north_america_designed_by_architect_bertrand_goldberg"
+            android:textColor="#312828"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <com.like.LikeButton
+            android:id="@+id/star_button"
+            android:layout_width="45dp"
+            android:layout_height="46dp"
+            app:anim_scale_factor="3"
+            app:icon_size="10dp"
+            app:icon_type="heart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.683"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.953"
         app:liked="false" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="416dp"
+                android:layout_height="754dp"
+                android:contentDescription="@string/fuente_de_los_amantes_arq_luis_barragan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.521"
+                app:srcCompat="@drawable/australia_2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="395dp"
+                android:layout_height="87dp"
+                android:layout_marginBottom="580dp"
+                android:text="@string/whitehaven_beach_is_a_7_km_stretch_known_for_its_crystal_white_silica_sands_and_turquoise_coloured_waters"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/go2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="@string/go"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/back_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintRight_toRightOf="@+id/imageView2" />
+
+            <com.like.LikeButton
+                android:id="@+id/star_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:anim_scale_factor="3"
+                app:icon_size="10dp"
+                app:icon_type="heart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.606"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.976"
+                app:liked="false" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ViewSwitcher>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -119,6 +119,8 @@
                 android:id="@+id/textView2"
                 android:layout_width="395dp"
                 android:layout_height="87dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginBottom="580dp"
                 android:text="@string/whitehaven_beach_is_a_7_km_stretch_known_for_its_crystal_white_silica_sands_and_turquoise_coloured_waters"
                 android:textColor="#FFFFFF"

@@ -28,6 +28,17 @@ public class India_1 extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button backbutton2 = (Button) findViewById(R.id.back_button2);
+        backbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        });
+
         final LikeButton likeButton = findViewById(R.id.star_button);
         likeButton.setOnLikeListener(new OnLikeListener() {
             @Override

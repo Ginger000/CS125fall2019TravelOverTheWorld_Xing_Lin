@@ -67,7 +67,7 @@
                 app:layout_constraintRight_toRightOf="@+id/imageView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView"
-                app:layout_constraintVertical_bias="0.752" />
+                app:layout_constraintVertical_bias="0.512" />
 
             <com.like.LikeButton
                 android:id="@+id/star_button"
@@ -114,15 +114,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.521"
-                app:srcCompat="@drawable/australia_2" />
+                app:srcCompat="@drawable/spain_2" />
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="395dp"
+                android:layout_width="380dp"
                 android:layout_height="87dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginBottom="580dp"
-                android:text="@string/whitehaven_beach_is_a_7_km_stretch_known_for_its_crystal_white_silica_sands_and_turquoise_coloured_waters"
-                android:textColor="#FFFFFF"
+                android:text="@string/designed_by_architect_frank_gehry_the_guggenheim_museum_bilbao_building_represents_a_magnificent_example_of_the_most_groundbreaking_20th_century_architecture"
+                android:textColor="#131212"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -150,6 +152,9 @@
                 android:id="@+id/back_button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="4dp"
                 android:text="@string/back"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageView2"
